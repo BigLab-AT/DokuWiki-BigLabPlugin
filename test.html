@@ -1,0 +1,191 @@
+<html>
+	<head>
+		<title>BGL DokuWiki Plugin Test</title>
+
+		<!-- jQuery -->
+		<script type="text/javascript" src="ext/jquery-2.1.4.min.js"></script>
+		<!-- jQuery tablesorter plugin -->
+		<script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+		
+		<!-- BGL -->
+		<script type="text/javascript" charset="utf-8" src="bgl.js"></script>
+		
+		<!-- SYNTAX HIGHLIGHTING -->
+		<script src="prism.js"></script>
+		
+		
+		<link rel="stylesheet" type="text/css" href="bgl.css" />
+		<link href="prism.css" rel="stylesheet" />
+		
+		
+		<!--<link rel="stylesheet" type="text/css" href="tablesorter.style.css" />-->
+	</head>
+	<body>
+	
+		<article>
+			<h1>header 1</h1>
+			<p>some toplevel paragraph. to show a quote: <q cite="bib01">this is a quotation</q>. to just cite: blablabla <cite ref="1"></cite>, or <cite ref="bib01"></cite></p>
+			<section>
+				<h2>header 2</h2>
+				<p>this is some text</p>
+			</section>
+			<section>
+				<h2>another header 2</h2>
+				<p>this is some more text. this is some more text this is some more text this is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more text</p>
+				<p>this is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more textthis is some more text</p>
+				<blockquote>this is a block quote. this is a block quote. this is a block quote. this is a block quote. this is a block quote. this is a block quote. this is a block quote. this is a block quote. this is a block quote. this is a block quote. this is a block quote. this is a block quote. this is a block quote. this is a block quote. this is a block quote. this is a block quote. this is a block quote. this is a block quote. this is a block quote. this is a block quote. this is a block quote. this is a block quote. this is a block quote. this is a block quote. this is a block quote. this is a block quote. this is a block quote. </blockquote>
+				<aside>this is some aside text</aside>
+			</section>
+			
+			<section>
+				<h2>Bibliography</h2>
+				<ol class="bibliography">
+					<li id='bib01'>Cassius Dio, 50:5; quoted from Cassius Dio: The Roman History: The Age of Augustus, (trans.) (<time datetime='1987'>1987</time>) Scott-Kilvert I.; reprinted 
+					in <cite>AA100 Assignment Booklet (<time datetime='2010-10'>October 2010</time>)</cite>, Milton Keynes, The Open University, p.18.</li>
+					<li id='bib02'>Scott-Kilvert, I. (trans.) (<time datetime='1987'>1987</time>) Cassius Dio: The Roman History: The Age of Augustus; reprinted in Fear, T (ed.) <cite>Reputations 
+					(AA100 Book 1)</cite>, Milton Keynes, The Open University, p. 27.</li>
+					<li id='bib03'>Scott-Kilvert, I. (trans.) (<time datetime='1965'>1965</time>) Plutarch: Makers of Rome; reprinted in Fear, T (ed.) <cite>Reputations (AA100 Book 1)</cite>, Milton Keynes
+					, The Open University, p.9.</li>
+					<li id='bib04'>Horace, Ode; quoted from Horace: The Complete Odes and Epodes, (trans.) (<time datetime='2004'>2004</time>) West D.; reprinted in Fear, T (ed.) <cite>Reputations (AA100 Book 1)</cite>, Milton Keynes, The Open University, p. 28.
+					Fear, T. (ed) Reputations (AA100 Book 1), Milton Keynes, The Open University, p.13.</li>
+					<li id="1">this is my simple reference</li>
+				</ol>
+			</section>
+			
+			<footer>this is some footer text</footer>
+		</article>
+	
+	
+		<article>
+			<h1>dummy section</h1>
+		
+			bla bla bla
+		</article>
+	
+	
+		<article>
+			<h1>code</h1>
+			
+		
+		<p>this is a paragraph. and now i want to use inline code: <code class="language-clike">this is inline code. int a = 0;</code>. looks nice.</p>
+		
+<p>code with line numbering:
+<pre class="line-numbers language-clike" data-filename="testfile.txt"><code class="language-clike">
+public static void main() {
+	func();
+	next();
+	int a = 1;
+}
+</code></pre>
+</p>
+	
+<p>code with certain lines highlighted:
+<pre data-line="2-4" class="language-clike"><code class="language-clike">
+public static void main() {
+	func();
+	next();
+	int a = 1;
+	loooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooong();
+}
+</code></pre>
+</p>
+
+		</article>
+		
+		
+		<article>
+			<h1>tables</h1>
+		
+<table class="tablesorter"> 
+<thead> 
+<tr> 
+    <th>Last Name</th> 
+    <th>First Name</th> 
+    <th>Email</th> 
+    <th>Due</th> 
+    <th>Web Site</th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+    <td>Smith</td> 
+    <td>John</td> 
+    <td>jsmith@gmail.com</td> 
+    <td>$50.00</td> 
+    <td>http://www.jsmith.com</td> 
+</tr> 
+<tr> 
+    <td>Bach</td> 
+    <td>Frank</td> 
+    <td>fbach@yahoo.com</td> 
+    <td>$50.00</td> 
+    <td>http://www.frank.com</td> 
+</tr> 
+<tr> 
+    <td>Doe</td> 
+    <td>Jason</td> 
+    <td>jdoe@hotmail.com</td> 
+    <td>$100.00</td> 
+    <td>http://www.jdoe.com</td> 
+</tr> 
+<tr> 
+    <td>Conway</td> 
+    <td>Tim</td> 
+    <td>tconway@earthlink.net</td> 
+    <td>$50.00</td> 
+    <td>http://www.timconway.com</td> 
+</tr> 
+</tbody> 
+</table> 
+	
+	
+	
+		
+<table class="tablesorter"> 
+<thead> 
+<tr> 
+    <th>Last Name</th> 
+    <th>C First Name</th> 
+    <th>D Email</th> 
+    <th>B Due</th> 
+    <th>A Web Site</th> 
+</tr> 
+</thead> 
+<tbody> 
+<tr> 
+    <td>Smith</td> 
+    <td>John</td> 
+    <td>jsmith@gmail.com</td> 
+    <td>$50.00</td> 
+    <td>http://www.jsmith.com</td> 
+</tr> 
+<tr> 
+    <td>Bach</td> 
+    <td>Frank</td> 
+    <td>fbach@yahoo.com</td> 
+    <td>$50.00</td> 
+    <td>http://www.frank.com</td> 
+</tr> 
+<tr> 
+    <td>Doe</td> 
+    <td>Jason</td> 
+    <td>jdoe@hotmail.com</td> 
+    <td>$100.00</td> 
+    <td>http://www.jdoe.com</td> 
+</tr> 
+<tr> 
+    <td>Conway</td> 
+    <td>Tim</td> 
+    <td>tconway@earthlink.net</td> 
+    <td>$50.00</td> 
+    <td>http://www.timconway.com</td> 
+</tr> 
+</tbody> 
+</table> 
+	
+	
+		</article>
+	
+	
+	</body>
+</html>

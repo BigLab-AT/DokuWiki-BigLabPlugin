@@ -1,0 +1,7 @@
+base   bgl
+author BigLan
+email  admin@biglan.at
+date   2015-09-08
+name   BigLan HTML Plugin
+desc   Plugin that provides CSS and JavaScript for writing pages in HTML
+url    https://tepeka.net/biglab/wiki/
